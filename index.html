@@ -1,26 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pick your Players</title>
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+
 </head>
+
 <body>
-    <main>
+    <main class="bg-gray-900">
         <header>
-           <div class="w-full h-screen bg-no-repeat" style="background-image: url(img/banner-img.png);">
-             <h1 class="text-5xl text-orange-600 text-center pt-44">Pick Your Players , Make Your Own Team</h1>
-             <p class="text-white text-center px-80 mt-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis laudantium deleniti porro. Tempore hic ex vel odit neque error culpa architecto suscipit praesentium! In nisi odit vel illum quaerat sed ad corrupti porro itaque, aut quod veniam voluptatibus nulla dolore .</p>
-           </div>
+            <div>
+                <div class="w-full h-screen  bg-no-repeat" style="background-image: url(img/banner-img.png);">
+                    <h1 class="text-5xl text-orange-600 text-center pt-44">Pick Your Players , Make Your Own Team</h1>
+                    <p class="text-white text-center px-80 mt-14">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        Blanditiis laudantium deleniti porro. Tempore hic ex vel odit neque error culpa architecto
+                        suscipit
+                        praesentium! In nisi odit vel illum quaerat sed ad corrupti porro itaque, aut quod veniam
+                        voluptatibus nulla dolore .</p>
+                </div>
+            </div>
         </header>
-        <section class="bg-red-300">
-             <div>
-                
-             </div>
+        <section class="w-9/12 mx-auto">
+            <div class="grid grid-cols-4 gap-4 ">
+                <!-- players selection section  -->
+                <div class="col-span-3 ...">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="">
+                            <!-- player-1  -->
+                            <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
+                                <figure><img src="img/player-1.png" alt="Shoes" /></figure>
+                                <div class="card-body bg-black text-white">
+                                    <h2 class="card-title mx-auto text-2xl">Lionel Messi</h2>
+                                    <div class="flex justify-around text-slate-400">
+                                        <p>36 Goals</p>
+                                        <p>.</p>
+                                        <p>120 Assists</p>
+                                    </div>
+                                    <div class="card-actions justify-center">
+                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium ">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="...">
+                            <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
+                                <figure><img src="img/player-2.png" alt="Shoes" /></figure>
+                                <div class="card-body bg-black text-white">
+                                    <h2 class="card-title mx-auto text-2xl">Neymar Jr.</h2>
+                                    <div class="flex justify-around text-slate-400">
+                                        <p>36 Goals</p>
+                                        <p>.</p>
+                                        <p>120 Assists</p>
+                                    </div>
+                                    <div class="card-actions justify-center">
+                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="...">
+                            <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
+                                <figure><img src="img/player-3.png" alt="Shoes" /></figure>
+                                <div class="card-body bg-black text-white">
+                                    <h2 class="card-title mx-auto text-2xl">Kylian Mbappé</h2>
+                                    <div class="flex justify-around text-slate-400">
+                                        <p>36 Goals</p>
+                                        <p>.</p>
+                                        <p>120 Assists</p>
+                                    </div>
+                                    <div class="card-actions justify-center">
+                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="...">
+                            <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
+                                <figure><img src="img/player-4.png" alt="Shoes" /></figure>
+                                <div class="card-body bg-black text-white">
+                                    <h2 class="card-title mx-auto text-2xl">Vítor Machado</h2>
+                                    <div class="flex justify-around text-slate-400">
+                                        <p>36 Goals</p>
+                                        <p>.</p>
+                                        <p>120 Assists</p>
+                                    </div>
+                                    <div class="card-actions justify-center">
+                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="...">
+                            <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
+                                <figure><img src="img/player-5.png" alt="Shoes" /></figure>
+                                <div class="card-body bg-black text-white">
+                                    <h2 class="card-title mx-auto text-2xl">Sergio Ramos</h2>
+                                    <div class="flex justify-around text-slate-400">
+                                        <p>36 Goals</p>
+                                        <p>.</p>
+                                        <p>120 Assists</p>
+                                    </div>
+                                    <div class="card-actions justify-center">
+                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="...">
+                            <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
+                                <figure><img src="img/player-6.png" alt="Shoes" /></figure>
+                                <div class="card-body bg-black text-white">
+                                    <h2 class="card-title mx-auto text-2xl font-medium">Renato Sanches</h2>
+                                    <div class="flex justify-around text-slate-400">
+                                        <p>36 Goals</p>
+                                        <p>.</p>
+                                        <p>120 Assists</p>
+                                    </div>
+                                    <div class="card-actions justify-center">
+                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- side nav section  -->
+                <div class="bg-black">
+                    <!-- <div class="grid grid-cols-1 "> -->
+                        <div class="grid grid-rows-2 grid-flow-col gap-4">
+                            <div>01</div>
+                            <!-- ... -->
+                            <div>09</div>
+                          </div>
+                        
+                    <!-- </div> -->
+                </div>
+
+            </div>
         </section>
     </main>
+       <!-- footer section starts  -->
+       <footer class="text-white bg-dark text-center mt-5">
+        <div class="container-fluid pt-5 pb-5">
+            <div class="pt-5">
+                <h2>Edu Station</h2>
+                <p>Office 41, Zawaya Buildin, Ghala Muscat,<br>
+                    Sultanate of Oman <br>
+                    Privacy Ploicy | Terms of use</p>
+
+            </div>
+            <div class="">
+                <div class="social-icon fs-2">
+                    <span><a href="https://www.facebook.com/"><i
+                                class="fab fa-facebook-square text-white"></i></a></span>
+                    <span><a href="https://www.instagram.com/"><i class="fab fa-instagram text-white"></i></a></span>
+                    <span><a href="https://www.instagram.com/"><i class="fab fa-linkedin text-white"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section ends -->
 </body>
+
 </html>
