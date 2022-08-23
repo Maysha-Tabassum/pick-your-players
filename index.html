@@ -19,22 +19,22 @@
     <main class="bg-gray-900">
         <header>
             <div>
-                <div class="w-full h-screen  bg-no-repeat" style="background-image: url(img/banner-img.png);">
-                    <h1 class="text-5xl text-orange-600 text-center pt-44">Pick Your Players , Make Your Own Team</h1>
+                <div class="w-full h-screen  bg-no-repeat bg-contain " style="background-image: url(img/banner-img.png);">
+                    <h1 class="text-5xl text-orange-600 text-center font-semibold pt-40">Pick Your Players , Make Your Own Team</h1>
                     <p class="text-white text-center px-80 mt-14">Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit.
                         Blanditiis laudantium deleniti porro. Tempore hic ex vel odit neque error culpa architecto
                         suscipit
                         praesentium! In nisi odit vel illum quaerat sed ad corrupti porro itaque, aut quod veniam
                         voluptatibus nulla dolore .</p>
-                </div>
+                    </div>
             </div>
         </header>
-        <section class="w-9/12 mx-auto">
-            <div class="grid grid-cols-4 gap-4 ">
+        <section class="w-9/12 mx-auto ">
+            <div class="grid grid-cols-4 gap-6 ">
                 <!-- players selection section  -->
-                <div class="col-span-3 ...">
-                    <div class="grid grid-cols-3 gap-6">
+                <div class="col-span-3">
+                    <div class="grid grid-cols-3 gap-6 ">
                         <div class="">
                             <!-- player-1  -->
                             <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
@@ -47,10 +47,13 @@
                                         <p>120 Assists</p>
                                     </div>
                                     <div class="card-actions justify-center">
-                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium ">SELECT</button>
+                                        <button
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium ">SELECT</button>
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
                         <div class="...">
                             <div class="card card rounded-none w-60 bg-base-100 shadow-xl">
@@ -63,7 +66,8 @@
                                         <p>120 Assists</p>
                                     </div>
                                     <div class="card-actions justify-center">
-                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                        <button
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +83,8 @@
                                         <p>120 Assists</p>
                                     </div>
                                     <div class="card-actions justify-center">
-                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                        <button
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +100,8 @@
                                         <p>120 Assists</p>
                                     </div>
                                     <div class="card-actions justify-center">
-                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                        <button
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +117,8 @@
                                         <p>120 Assists</p>
                                     </div>
                                     <div class="card-actions justify-center">
-                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                        <button
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +134,8 @@
                                         <p>120 Assists</p>
                                     </div>
                                     <div class="card-actions justify-center">
-                                        <button class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                        <button
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -135,22 +143,69 @@
                     </div>
                 </div>
                 <!-- side nav section  -->
-                <div class="bg-black">
-                    <!-- <div class="grid grid-cols-1 "> -->
-                        <div class="grid grid-rows-2 grid-flow-col gap-4">
-                            <div>01</div>
-                            <!-- ... -->
-                            <div>09</div>
-                          </div>
-                        
-                    <!-- </div> -->
-                </div>
+               
+                <div class="grid grid-cols-1 gap-6">
+
+                        <div class="col-span-2 text-white w-60 ">
+                            <div class="grid grid-rows-2 grid-flow-col">
+                                <!-- player selected -->
+                                <div class=" h-max w-60 bg-base-100 shadow-xl">
+                                    <h1 class=" bg-black font-semibold text-2xl py-3 px-3 border">Selected Players -
+                                        <span>0</span></h1>
+                                    <div class="card-body h-80 bg-black text-white">
+                                        <ol>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                        </ol>
+                                    </div>
+                                    
+                                </div>
+                                <div class="h-max w-60 bg-base-100 shadow-xl">
+                                        <h1 class=" bg-black font-semibold text-2xl py-3 flex justify-center border">Budget</h1>
+                                    <div class=" bg-black text-white ">
+                                        <div class="p-4 flex justify-around">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Per Player</label>
+                                        <input class=" w-3/6 h-10 px-6 bg-black text-white border type="text" name="cost" id="per-player-cost">
+                                        </div>
+                                        <div class="px-4 flex justify-center">
+                                            <button
+                                            class="px-16 py-2 text-white bg-blue-600 font-medium">calculate</button>
+                                        </div>
+                                        <div class="p-4 flex justify-around">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Manager</label>
+                                        <input class=" w-3/6 h-10 bg-black text-white border type="text" name="cost" id="per-player-cost">
+                                        </div>
+                                        <div class="p-4 flex justify-around align-center">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Coach</label>
+                                        <input class=" w-3/6 h-10 bg-black text-white border type="text" name="cost" id="per-player-cost">
+                                        </div>
+                                        <div class="px-4 flex justify-center">
+                                            <button
+                                            class="px-10 py-2 text-white bg-blue-600 font-medium">Calculate Total</button>
+                                        </div>
+                                        <div class="p-4 flex justify-around align-center">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Total</label>
+                                             <p>$11000</p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                        </div>
 
             </div>
         </section>
+        <script src="js/select-player.js"></script>
     </main>
-       <!-- footer section starts  -->
-       <footer class="text-white bg-gray-900 text-center">
+    <!-- footer section starts  -->
+    <footer class="text-white bg-gray-900 text-center">
         <div class="pt-5 pb-5">
             <div class=" font-medium ">
                 <hr class="m-12">
