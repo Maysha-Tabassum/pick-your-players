@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="card-actions justify-center">
                                         <button
-                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium ">SELECT</button>
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium" onclick="addPlayer(this), disable(this)">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="card-actions justify-center">
                                         <button
-                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium"  onclick="addPlayer(this), disable(this)">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                                     </div>
                                     <div class="card-actions justify-center">
                                         <button
-                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium"  onclick="addPlayer(this), disable(this)">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                                     </div>
                                     <div class="card-actions justify-center">
                                         <button
-                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium"  onclick="addPlayer(this), disable(this)">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                     </div>
                                     <div class="card-actions justify-center">
                                         <button
-                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium"  onclick="addPlayer(this), disable(this)">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="card-actions justify-center">
                                         <button
-                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium">SELECT</button>
+                                            class=" mt-4 px-16 py-2 text-white bg-blue-600 font-medium"  onclick="addPlayer(this), disable(this)" >SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -144,25 +144,34 @@
                 </div>
                 <!-- side nav section  -->
                
-                <div class="grid grid-cols-1 gap-6">
+                <div class="grid gap-6 grid-cols-1  ">
 
-                        <div class="col-span-2 text-white w-60 ">
-                            <div class="grid grid-rows-2 grid-flow-col">
+                        <div class=" text-white w-60 grid gap-6 grid-cols-1 ">
+                            <div class="grid gap-6 ">
                                 <!-- player selected -->
                                 <div class=" h-max w-60 bg-base-100 shadow-xl">
                                     <h1 class=" bg-black font-semibold text-2xl py-3 px-3 border">Selected Players -
-                                        <span>0</span></h1>
-                                    <div class="card-body h-80 bg-black text-white">
-                                        <ol>
-                                            <li>1</li>
-                                            <li>2</li>
-                                            <li>3</li>
-                                            <li>4</li>
-                                            <li>5</li>
-                                        </ol>
+                                        <span class="text-orange-500" id="total-player">0</span></h1>
+                                    <div class="px-4 py-3 gap-2 h-80 bg-black text-black border">
+                                        <!-- //selected players  -->
+                                        <div class="h-3">
+                                            <table class="table w-full">
+                                              <!-- head -->
+                                              
+                                              <tbody id="selected-players">
+                                                <!-- row 1 -->
+                                                <tr class="text-black">
+                                                  
+                                                  
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                       
                                     </div>
                                     
                                 </div>
+                                <!-- budget section calculation -->
                                 <div class="h-max w-60 bg-base-100 shadow-xl">
                                         <h1 class=" bg-black font-semibold text-2xl py-3 flex justify-center border">Budget</h1>
                                     <div class=" bg-black text-white ">
@@ -173,6 +182,10 @@
                                         <div class="px-4 flex justify-center">
                                             <button
                                             class="px-16 py-2 text-white bg-blue-600 font-medium">calculate</button>
+                                        </div>
+                                        <div class="p-4 flex justify-around align-center">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Player Expenses</label>
+                                             <p>$5000</p>
                                         </div>
                                         <div class="p-4 flex justify-around">
                                             <label class=" text-slate-400 text-lg font-normal " for="per plater">Manager</label>
@@ -188,7 +201,7 @@
                                         </div>
                                         <div class="p-4 flex justify-around align-center">
                                             <label class=" text-slate-400 text-lg font-normal " for="per plater">Total</label>
-                                             <p>$11000</p>
+                                             <p class="text-orange-500">$11000</p>
                                         </div>
                                     </div>
                                     
@@ -203,13 +216,14 @@
             </div>
         </section>
         <script src="js/select-player.js"></script>
+        <script src="js/budget.js"></script>
     </main>
     <!-- footer section starts  -->
     <footer class="text-white bg-gray-900 text-center">
         <div class="pt-5 pb-5">
             <div class=" font-medium ">
                 <hr class="m-12">
-                <h2>Pick Your Player</h2>
+                <h2 class="text-3xl">Pick Your Player</h2>
                 <p class="pt-3">Copyright @ Maysha Tabassum | 2022 All Rights Reserved</p>
 
             </div>
