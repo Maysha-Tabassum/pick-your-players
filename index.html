@@ -21,12 +21,7 @@
             <div>
                 <div class="w-full h-screen  bg-no-repeat bg-contain " style="background-image: url(img/banner-img.png);">
                     <h1 class="text-5xl text-orange-600 text-center font-semibold pt-40">Pick Your Players , Make Your Own Team</h1>
-                    <p class="text-white text-center px-80 mt-14">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.
-                        Blanditiis laudantium deleniti porro. Tempore hic ex vel odit neque error culpa architecto
-                        suscipit
-                        praesentium! In nisi odit vel illum quaerat sed ad corrupti porro itaque, aut quod veniam
-                        voluptatibus nulla dolore .</p>
+                    <p class="text-white text-center px-80 mt-14">Paris Saint-Germain Football Club, commonly referred to as Paris Saint-Germain, Paris, Paris SG or simply PSG is a professional football club based in Paris, France. They compete in Ligue 1, the top division of French football.Paris Saint-Germain Football Club, commonly referred to as Paris Saint-Germain, Paris, Paris SG or simply PSG is a professional football club based in Paris, France. They compete in Ligue 1, the top division of French football.</p>
                     </div>
             </div>
         </header>
@@ -151,8 +146,8 @@
                                 <!-- player selected -->
                                 <div class=" h-max w-60 bg-base-100 shadow-xl">
                                     <h1 class=" bg-black font-semibold text-2xl py-3 px-3 border">Selected Players -
-                                        <span class="text-orange-500" id="total-player">0</span></h1>
-                                    <div class="px-4 py-3 gap-2 h-80 bg-black text-black border">
+                                        <p class="inline" id="number"><span id="total-player" >0</span></p></h1>
+                                    <div  class="px-4 py-3 gap-2 h-80 bg-black text-black border">
                                         <!-- //selected players  -->
                                         <div class="h-3">
                                             <table class="table w-full">
@@ -176,32 +171,32 @@
                                         <h1 class=" bg-black font-semibold text-2xl py-3 flex justify-center border">Budget</h1>
                                     <div class=" bg-black text-white ">
                                         <div class="p-4 flex justify-around">
-                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Per Player</label>
-                                        <input class=" w-3/6 h-10 px-6 bg-black text-white border type="text" name="cost" id="per-player-cost">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per player">Per Player</label>
+                                        <input class=" w-3/6 h-10 px-6 bg-black text-white border" type="text" name="cost" id="per-player-cost">
                                         </div>
                                         <div class="px-4 flex justify-center">
-                                            <button
+                                            <button id="calculate-btn"
                                             class="px-16 py-2 text-white bg-blue-600 font-medium">calculate</button>
                                         </div>
                                         <div class="p-4 flex justify-around align-center">
-                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Player Expenses</label>
-                                             <p>$5000</p>
+                                            <label class=" text-slate-400 text-lg font-normal " for="per player">Player Expenses</label>
+                                             <p class="text-orange-500">$<span id="total-player-cost">00</span></p>
                                         </div>
                                         <div class="p-4 flex justify-around">
-                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Manager</label>
-                                        <input class=" w-3/6 h-10 bg-black text-white border type="text" name="cost" id="per-player-cost">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per player">Manager</label>
+                                        <input class=" w-3/6 h-10 px-6 bg-black text-white border" type="text" name="cost" id="manager-cost">
                                         </div>
                                         <div class="p-4 flex justify-around align-center">
-                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Coach</label>
-                                        <input class=" w-3/6 h-10 bg-black text-white border type="text" name="cost" id="per-player-cost">
+                                            <label class=" text-slate-400 text-lg font-normal " for="per player">Coach</label>
+                                        <input class=" w-3/6 h-10 px-6 bg-black text-white border" type="text" name="cost" id="coach-cost">
                                         </div>
                                         <div class="px-4 flex justify-center">
-                                            <button
+                                            <button id="calculate-total-btn"
                                             class="px-10 py-2 text-white bg-blue-600 font-medium">Calculate Total</button>
                                         </div>
                                         <div class="p-4 flex justify-around align-center">
-                                            <label class=" text-slate-400 text-lg font-normal " for="per plater">Total</label>
-                                             <p class="text-orange-500">$11000</p>
+                                            <label class=" text-slate-400 text-lg font-normal " for="per player">Total</label>
+                                             <p class="text-orange-500">$<span id="grand-total">00</span></p>
                                         </div>
                                     </div>
                                     
